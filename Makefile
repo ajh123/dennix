@@ -99,6 +99,9 @@ $(INITRD): $(SYSROOT)
 qemu: $(ISO)
 	qemu-system-$(BASE_ARCH) -cdrom $^ -m 512M -cpu host -enable-kvm
 
+qemu-no_kvm: $(ISO)
+	qemu-system-$(BASE_ARCH) -cdrom $^ -m 512M
+
 sh: $(INCLUDE_DIR) $(LIB_DIR)
 	$(MAKE) -C sh
 

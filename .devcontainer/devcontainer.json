@@ -1,0 +1,30 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "Dennix",
+	"build": { "dockerfile": "Dockerfile" },
+	"features": {
+		"ghcr.io/devcontainers/features/desktop-lite:1": {}
+	},
+
+
+	"forwardPorts": [6080, 5901],
+	"portsAttributes": {
+	  "6080": {
+		"label": "desktop"
+	  }
+	},
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-vscode.cpptools-extension-pack",
+				"doinkythederp.nasm-language-support",
+				"usernamehw.errorlens",
+				"mesonbuild.mesonbuild"
+			]
+		}
+	}
+}

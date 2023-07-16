@@ -25,7 +25,9 @@ to get information about these environment variables.
 You will probably want to set `$PREFIX` to a path where you want the toolchain
 to be installed. After the toolchain has been installed you need to add
 `$PREFIX/bin` to your `$PATH`. Finally you can run `make` to build a bootable
-cdrom image.
+cdrom image. `$PREFIX` is defaulty `/home/<your user>/dennix-toolchain`.
+On a Linux like system you can temporarily set the `$PATH` by doing the following
+command `export PATH=$PREFIX/bin:$PATH`.
 
 ## Ports
 

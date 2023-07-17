@@ -21,7 +21,6 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-vscode.cpptools-extension-pack",
-				"doinkythederp.nasm-language-support",
 				"usernamehw.errorlens",
 				"mesonbuild.mesonbuild"
 			]
